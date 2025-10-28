@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburger Horizons Modpack</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: 'Inter', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top header bar */
+    .top-header {
+      width: 100%;
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+      padding: 15px 30px;
+      box-sizing: border-box;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    header {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 40px 0 20px 0;
+    }
+
+    .main-section {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 80px;
+    }
+
+    .download-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .download-button {
+      background-color: #e0e0e0;
+      color: #121212;
+      padding: 14px 36px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .download-button:hover {
+      background-color: #cfcfcf;
+    }
+
+    .mod-list-container {
+      background-color: #1b1b1b;
+      padding: 20px 30px;
+      border-radius: 8px;
+      min-width: 250px;
+    }
+
+    .mod-list-container h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .mod-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .mod-list li {
+      padding: 6px 0;
+      border-bottom: 1px solid #2a2a2a;
+      font-size: 0.95rem;
+    }
+
+    .mod-list li:last-child {
+      border-bottom: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #2a2a2a;
+    }
+
+    @media (max-width: 800px) {
+      .main-section {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .mod-list-container {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-header">
+    <!-- Edit this text easily -->
+    Hamburger Horizons
+  </div>
+
+  <header>
+    Hamburger Horizons (Made for Modrinth BTW)
+  </header>
+
+  <div class="main-section">
+    <div class="download-container">
+      <a href="EiUUDZV.mrpack" download class="download-button">Download Modpack</a>
+    </div>
+
+    <div class="mod-list-container">
+      <h3>The Mods</h3>
+      <ul class="mod-list">
+        <li>Bee's Fancy Crops</li>
+        <li>Mod Two</li>
+        <li>Mod Three</li>
+        <li>Mod Four</li>
+        <li>Mod Five</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    
+  </footer>
+
+</body>
+</html>
