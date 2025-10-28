@@ -44,6 +44,8 @@
       align-items: center;
       justify-content: center;
       gap: 80px;
+      padding: 0 20px;
+      box-sizing: border-box;
     }
 
     .download-container {
@@ -73,6 +75,24 @@
       padding: 20px 30px;
       border-radius: 8px;
       min-width: 250px;
+      max-height: 300px; /* limits height */
+      overflow-y: auto; /* enables scroll */
+      scrollbar-width: thin;
+      scrollbar-color: #555 #1b1b1b;
+    }
+
+    /* Scrollbar styling for WebKit browsers */
+    .mod-list-container::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .mod-list-container::-webkit-scrollbar-track {
+      background: #1b1b1b;
+    }
+
+    .mod-list-container::-webkit-scrollbar-thumb {
+      background-color: #555;
+      border-radius: 3px;
     }
 
     .mod-list-container h3 {
@@ -121,32 +141,64 @@
 
   <div class="top-header">
     <!-- Edit this text easily -->
-    Hamburger Horizons
+    PMO
   </div>
 
   <header>
-    Hamburger Horizons (Made for Modrinth BTW)
+    Hamburger Horizons Official Mod Pack
   </header>
 
   <div class="main-section">
     <div class="download-container">
-      <a href="EiUUDZV.mrpack" download class="download-button">Download Modpack</a>
+      <a href="readme.txt" download class="download-button">Download Modpack</a>
     </div>
 
     <div class="mod-list-container">
-      <h3>The Mods</h3>
+      <h3>Mod List</h3>
       <ul class="mod-list">
         <li>Bee's Fancy Crops</li>
-        <li>Mod Two</li>
-        <li>Mod Three</li>
-        <li>Mod Four</li>
-        <li>Mod Five</li>
+        <li>EMF</li>
+        <li>ETF</li>
+        <li>AppleSkin</li>
+        <li>Astroid</li>
+        <li>Bliss Shaders</li>
+        <li>BSl Shaders</li>
+        <li>Chat Reporting Helper</li>
+        <li>Cloth API </li>
+        <li>Collective</li>
+        <li>Complementary Shaders</li>
+        <li>Continuity</li>
+        <li>Default Dark Mode</li>
+        <li>Default HD 128x</li>
+        <li>Dynamic FPS</li>
+        <li>Entity Culling</li>
+        <li>Fabric API </li>
+        <li>Fabric Language Kotlin</li>
+        <li>Fast Better Grass</li>
+        <li>FerriteCore</li>
+        <li>Full Brightness Toggle</li>
+        <li>FullBright UB</li>
+        <li>Glore</li>
+        <li>HUD - FPS Veltium </li>
+        <li>Immediately Fast</li>
+        <li>Iris Shaders</li>
+        <li>LambDynamicLights</li>
+        <li>Lithium </li>
+        <li>Low Fire</li>
+        <li>Medieval Ambience</li>
+        <li>Medieval Fonts</li>
+        <li>Medieval Melodies</li>
+        <li>Medium CrossHair</li>
+        <li>Mod Menu</li>
+        <li>Sodium </li>
+        <li>Text PlaceHolder API</li>
+        <li>YetAnotherConfig (YACL) </li>
       </ul>
     </div>
   </div>
 
   <footer>
-    
+    © 2025 Hamburger Horizons — All rights reserved.
   </footer>
 
 </body>
